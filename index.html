@@ -1,0 +1,27 @@
+<form action="medication.html">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+</form>
+
+
+<script>
+    function showMedication() {
+        document.getElementById("medicationInfo").style.display = "block";
+    }
+</script>
+
+<form onsubmit="showMedication(); return false;">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+</form>
+
+<div id="medicationInfo" style="display: none;">
+    <h3>Recommended Medications</h3>
+    <ul>
+        <li><b>Paracetamol:</b> Pain relief and fever reduction.</li>
+        <li><b>Antibiotics:</b> Treat bacterial infections (consult a doctor).</li>
+        <li><b>Vitamin D:</b> Supports bone health and immunity.</li>
+    </ul>
+</div>
